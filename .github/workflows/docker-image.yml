@@ -23,4 +23,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag frankwolfe-ch-assignment:$(date +%s)
     - name: Docker Push
-      run: docker push ${{secrets.DOCKERUSER}}/frankwolfe-ch-assignment
+      run: docker push ${{secrets.DOCKER_USER}}/frankwolfe-ch-assignment
